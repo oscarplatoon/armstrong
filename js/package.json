@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "shallow-equal": "^1.2.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1"
+  },
+  "scripts": {
+    "test" : "jest"
+  }
+ }
