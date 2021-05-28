@@ -18,15 +18,12 @@ def find_armstrong_numbers(numbers):
   answer = []
   for num in numbers:
     exponent = len(str(num))
-    print(exponent)
     sum = 0
     temp = num
     while temp > 0:
-      digit = temp % 10 # =1, 7, 3
-      sum += digit**exponent # = 1^3, 7^3, 3^3
-      temp //= 10 # = 37, 3
-      print(temp)
-      print(digit)
+      digit = temp % 10
+      sum += digit**exponent
+      temp //= 10
     if num == sum:
       answer.append(num)
   return answer
